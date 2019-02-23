@@ -1,0 +1,25 @@
+#{}內，應該就是statement list，簡稱stmt_list
+digraph boxes_and_circles {
+  
+  # a 'graph' statement
+  graph [layout = twopi, overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  A; B; C; D; E; F
+
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9
+        height = 1.2] // sets as circles
+  1; 2; 3; 4; 5; 6; 7; 測試
+
+  subgraph {rank = same; A; B; C;}
+
+
+  # several 'edge' statements
+  A->{1 3 5} B->2 B->3 B->4 C->A
+  1->D E->A 2->4 1->5 1->F
+  E->6 4->6 5->7 6->7 3->測試[arrowhead = tee]
+}

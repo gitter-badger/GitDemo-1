@@ -1,0 +1,22 @@
+bookdown::gitbook:
+  includes:
+    in_header: ["Before_body/bootstrap.html"] #hypothesis.html,
+    before_body: ["Before_body/head.html",
+                  "Before_body/style.html"]
+    after_body: ["After_body/bootstrap-after-body.html"]
+  css: style.css
+  config:
+    toc:
+      collapse: none
+      before: |
+        <li><a href="./">Minimal Git demo</a></li>
+      after: |
+        <li><a href="https://www.facebook.com/Emajortaiwanforu/" target="blank">E.MajorTaiwan</a></li>
+    download: [pdf, epub]
+#    edit: https://github.com/yihui/bookdown-chinese/edit/master/%s
+    sharing:
+      github: no
+      facebook: no
+    theme: united
+bookdown::epub_book:
+  stylesheet: css/style.css
