@@ -12,9 +12,15 @@
 
 ### 本地端到雲端{-}
 
-小瑜把需要的軟體資源都裝好了，現在開始他寫報告打字都會進行git版本控制，他都怎麼做呢？一起來瞧瞧！
+小瑜把需要的軟體資源都裝好了，現在開始他每次寫報告都要把檔案加到版本控制，他要怎麼做呢？一起來瞧瞧！
 
-#### git add{-}
+#### git init{-}
+
+- 把尚未有版本控制的檔案或資料夾加進來
+
+  - 小瑜新增了一個GitDemo2的資料夾
+
+> Add repository 則是把原本就已經有版本控制的檔案或資料夾，整合到Github Desktop的GUI介面，較方便操作。
 
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
@@ -24,32 +30,83 @@
 library(htmltools)
 HTML('
 <div class="collapse" id="collapseExample8">
-<h3>第一部分</h3>
-<img src="./img/git_add_repo.png" style="width:70%">
+<h3>新增版本控制資料夾</h3>
+<img src="./img/git_init.png" style="width:70%">
 </div>
      ')
 ```
 
-```{r git add, echo=FALSE}
+```{r git_init, echo=FALSE}
 library(DiagrammeR)
 grViz("
 digraph git_add {
- graph[layout = dot, rankdir = LR, overlap = false, fontsize = 10]
+ graph[layout = dot, rankdir = LR, overlap = false, fontsize = 8]
 
- node[shape = circle, fontname = Helvetica]
- Untracked
+ node[shape = circle, fontname = Helvetica, style = dotted];
+ Untracked;
 
- node[shape = box, fontname = Helvetica, color = red, fontcolor = red]
- staged
+ subgraph cluster_0{
+ label = 'staged'; color = 'red'; fontcolor = 'red'; style ='dotted'
 
- Untracked -> staged[arrowhead = normal];
+ node[shape = box, fontname = Helvetica, style = normal]
+ GitDemo2
+ } 
+
+ Untracked -> GitDemo2[label = 'New repository'];
 }
+")
+```
+
+
+
+- 小瑜在裡面新增了一個檔案`Demo.txt`
+
+<div class="alert white">
+截圖<a data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
+</div>
+
+```{r, eval=TRUE, echo=FALSE}
+library(htmltools)
+HTML('
+<div class="collapse" id="collapseExample9">
+<h3>在版本控制資料夾內新增檔案</h3>
+<img src="./img/git_init_touch_newfile.png" style="width:70%">
+</div>
+     ')
+```
+
+```{r touch_new_file, echo=FALSE}
+library(DiagrammeR)
+grViz("
+digraph git_add {
+ graph[layout = dot, rankdir = LR, overlap = false, fontsize = 8]
+
+ subgraph cluster_0{
+ label = 'staged'; color = 'red'; fontcolor = 'red'; style = 'dotted'
+
+ node[shape = box, fontname = Helvetica, style = normal]
+ GitDemo2
+ } 
+
+ subgraph cluster_1{
+ label = 'staged'; color = red; fontcolor = red; style = dotted
+
+ subgraph cluster_2{
+ label = 'GitDemo2'; color=black; style = normal; fontcolor = normal
+
+ node[shape = box, fontname = Helvetica, style = normal]
+ Demo_txt
+ }
+ } 
+ 
+ GitDemo2 -> Demo_txt[label = 'initate new file']
+ } 
 ")
 ```
 
 #### git commit{-}
 
-- 凡事
+- 凡是
 
 #### git push{-}
 
@@ -57,7 +114,7 @@ digraph git_add {
 
 ### 雲端到本地端{-}
 
-#### git clone (fork, then clone)
+#### git clone (fork, then clone){-}
 
 ### 我反悔了{-}
 
