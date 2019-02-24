@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 2 GitHub | Minimal-Git-demo</title>
+  <meta name="description" content="This is a minimal example of git service through Github and the Github Desktop.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 2 GitHub | Minimal-Git-demo" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of git service through Github and the Github Desktop." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 GitHub | Minimal-Git-demo" />
+  
+  <meta name="twitter:description" content="This is a minimal example of git service through Github and the Github Desktop." />
+  
+
+<meta name="author" content="PoMingChen">
+
+
+<meta name="date" content="2019-02-24">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="github-desktop.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Minimal Git demo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#git"><i class="fa fa-check"></i>為什麼Git值得學</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e7b7a8e5afabe696b9e5bc8fe8aaaae6988e"><i class="fa fa-check"></i>編寫方式說明</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e59fbae69cace8a681e6b182"><i class="fa fa-check"></i>基本要求</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>2</b> GitHub</a><ul>
+<li class="chapter" data-level="" data-path="github.html"><a href="github.html#githubgit"><i class="fa fa-check"></i>GitHub與Git之間的關係</a></li>
+<li class="chapter" data-level="" data-path="github.html"><a href="github.html#github"><i class="fa fa-check"></i>GitHub環境介紹</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="github-desktop.html"><a href="github-desktop.html"><i class="fa fa-check"></i><b>3</b> Github Desktop</a></li>
+<li class="chapter" data-level="4" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>4</b> References</a><ul>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html#e69c89e8b6a3e79a84e69687e7aba0"><i class="fa fa-check"></i>有趣的文章</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.facebook.com/Emajortaiwanforu/" target="blank">E.MajorTaiwan</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Minimal-Git-demo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109510055-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109510055-1');
+</script>
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'NTPU-Econ/minicourse-dplyr'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<style>
+.exercise {
+    background-color: PaleGreen;
+}
+</style>
+<div id="github" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> GitHub</h1>
+<div id="githubgit" class="section level3 unnumbered">
+<h3>GitHub與Git之間的關係</h3>
+<blockquote>
+<p>如果你有在用Git，你不一定會用到GitHub；但若你有用GitHub，你一定有在用Git</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Git是一套協助開發者進行版本控制的程式。</p></li>
+<li><p>GitHub = Git + Hub。</p></li>
+</ol>
+<ul>
+<li><p>Hub本身可以理解為中心、樞紐的意思，略有集散地的感覺。</p></li>
+<li><p>GitHub本身是一個雲端儲存程式檔案的一個平台，讓許多開發者可以藉此進行雲端備份、遠距共同開發（這樣就不用每天都要進辦公室討論XD），交流新技術的地方。目前也是全球最大的<del>男性</del>開源程式碼（Open Source）交流平台。</p></li>
+<li><p>可以理解為開發者圈子的臉書。許多人也會藉此展現自己的作品集作為爭取工作機會的籌碼。</p></li>
+<li><p>一個簡單的反例是<a href="https://about.gitlab.com">GitLab</a>，所以其實GitHub所提供的程式碼備份（託管）服務並不是唯一。</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Git世界裡面的資料夾叫做repository(repo)，可以理解為儲存庫。只要有賦予其版本控制的資料夾都是一個repo。</li>
+</ol>
+</div>
+<div id="github" class="section level3 unnumbered">
+<h3>GitHub環境介紹</h3>
+<blockquote>
+<p>以下內容示範截圖皆以<a href="https://GitHub.com/hadley/r4ds">R for Data Science</a>以及<a href="https://GitHub.com/PoMingChen/GitDemo">PoMingChen/GitDemo</a>這兩個repo作為說明</p>
+</blockquote>
+<div id="fork" class="section level4 unnumbered">
+<h4>Fork</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample">
+<h3>第一部分</h3>
+<img src="img/Fork-watch-star.png" style="width:70%">
+<h3>第二部分</h3>
+<img src="img/Github_Fork.gif" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：把別人整個repo複製到我的GitHub帳戶底下，我因此有了完整的屬於我的另外一份。</li>
+<li><strong>使用時機</strong>：<strong>目的在參與</strong>。當看到自己有興趣的專案，想要進一步玩玩或者做出貢獻，為了避免損及（更動）到原本作者的東西，就需要Fork自己的一份回來，改好之後就可以再送pull request（section ? ）給原作者。</li>
+</ul>
+</div>
+<div id="watch-star" class="section level4 unnumbered">
+<h4>Watch &amp; Star</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample2">
+<h3>第一部分</h3>
+<img src="img/Fork-watch-star.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：關注你感興趣的repo，方便往後查找</li>
+<li><strong>使用時機</strong>：Watch會動態通知該repo的更新給你，Star則不會。</li>
+</ul>
+</div>
+<div id="readme" class="section level4 unnumbered">
+<h4>README</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample3">
+<h3>第一部分</h3>
+<img src="img/README.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：瞭解一下原開發者希望你如何使用這個repo</li>
+<li><strong>使用時機</strong>：進到任何一個新接觸的repo，有點類似使用說明書。</li>
+</ul>
+</div>
+<div id="code" class="section level4 unnumbered">
+<h4>Code</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample4">
+<h3>第一部分</h3>
+<img src="img/code.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：陳列這個repo有哪些檔案。</li>
+<li><strong>使用時機</strong>：若你需要瀏覽或下載單一個檔案的時候</li>
+</ul>
+</div>
+<div id="issue" class="section level4 unnumbered">
+<h4>Issue</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample5">
+<h3>第一部分</h3>
+<img src="img/issue.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：紀錄開發者想要討論的議題</li>
+<li><strong>使用時機</strong>：團隊開發時藉此紀錄哪些bug還沒有修，或者（若是在別人的repo）藉此向對方反應使用上遇到的問題或者可能的建議。</li>
+</ul>
+</div>
+<div id="pull-request" class="section level4 unnumbered">
+<h4>Pull Request</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample6">
+<h3>第一部分</h3>
+<img src="img/pull_request.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：將自己寫好的程式送出給別人，或者把別人的程式拉進來給自己使用。</li>
+<li><strong>使用時機</strong>：團隊開發時當我寫好一個新的功能（或修改好bug）時候要送出給團隊使用；或者發現某個功能別人已經寫好了，想要奠基在他的程式碼做開發，就需要先把他納進來。</li>
+<li>詳見後面章節（?_給超連結）</li>
+</ul>
+</div>
+<div id="project" class="section level4 unnumbered">
+<h4>Project</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample7">
+<h3>第一部分</h3>
+<img src="img/project.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：視覺化目前團隊開發的各式進度，像是修bug，寫新功能，與其他部門配合的狀況。</li>
+<li><strong>使用時機</strong>：當發現issue不足以管理整個發展的時候，可以考慮使用。</li>
+</ul>
+</div>
+<div id="wiki" class="section level4 unnumbered">
+<h4>Wiki</h4>
+<div class="alert white">
+<p>截圖<a data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
+</div>
+
+<div class="collapse" id="collapseExample8">
+<h3>第一部分</h3>
+<img src="img/wiki.png" style="width:70%">
+</div>
+     
+<ul>
+<li><strong>作用</strong>：是這個repo的wikipedia。比起<code>README</code>更為細節，通常是團隊開發時用來建立彼此的默契，像是要如何審核對方的程式碼等。</li>
+<li><strong>使用時機</strong>：如果自己想要積極貢獻某一個開源專案，都可以去瀏覽一下先前是否有相關的規範以建立默契。或者身為project leader需要時可以撰寫wiki，方便新加入的人參考。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- 2. Include library -->
+<script src="js/clipboard.min.js"></script>
+
+<!-- 3. Instantiate clipboard by passing a string selector -->
+
+<script>
+var clipboard = new Clipboard('.btn');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+
+<script>
+  var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+  var copyTextarea = document.querySelector('.js-copytextarea');
+  copyTextarea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+});
+</script>
+
+<script>
+  function CopyToClipboard(containerid) {
+if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById(containerid));
+    range.select().createTextRange();
+    document.execCommand("copy");
+
+} else if (window.getSelection) {
+    var range = document.createRange();
+     range.selectNode(document.getElementById(containerid));
+     window.getSelection().addRange(range);
+     document.execCommand("copy");
+     alert("text copied")
+}}
+</script>
+
+<!--
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'https://gitter.im/NTPU-Econ/Econometrics'
+  };
+</script>
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+-->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="github-desktop.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"google": true,
+"linkedin": true,
+"weibo": false,
+"instapaper": true,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Minimal-Git-demo.pdf", "Minimal-Git-demo.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"theme": "united"
+});
+});
+</script>
+
+</body>
+
+</html>

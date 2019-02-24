@@ -1,0 +1,11 @@
+# References
+
+### 有趣的文章{-}
+
+[臺灣首位GitHub設計師現身說法：GitHub就是開發者的作品集](https://www.ithome.com.tw/news/95284)
+
+[Buying GitHub takes Microsoft back to its roots](https://www.economist.com/business/2018/06/09/buying-github-takes-microsoft-back-to-its-roots)
+
+[【Lynn寫點週報】為什麼大家怕微軟收購GitHub？除了形象問題，還有GitHub的政治中立立場](https://www.inside.com.tw/article/13181-weekly-3)
+
+

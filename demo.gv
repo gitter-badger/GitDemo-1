@@ -1,4 +1,4 @@
-#{}內，應該就是statement list，簡稱stmt_list
+ #{}內，應該就是statement list，簡稱stmt_list
 digraph boxes_and_circles {
   
   # a 'graph' statement

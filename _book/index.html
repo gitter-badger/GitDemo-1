@@ -5,27 +5,27 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Minimal Git demo</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <title>Minimal-Git-demo</title>
+  <meta name="description" content="This is a minimal example of git service through Github and the Github Desktop.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Minimal Git demo" />
+  <meta property="og:title" content="Minimal-Git-demo" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="This is a minimal example of git service through Github and the Github Desktop." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Minimal Git demo" />
+  <meta name="twitter:title" content="Minimal-Git-demo" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="This is a minimal example of git service through Github and the Github Desktop." />
   
 
 <meta name="author" content="PoMingChen">
 
 
-<meta name="date" content="2019-02-23">
+<meta name="date" content="2019-02-24">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
   
   
 
-<link rel="next" href="commandlineinterface.html">
+<link rel="next" href="github.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,59 +51,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-<style type="text/css">
-div.sourceLine, a.sourceLine { display: inline-block; min-height: 1.25em; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; }
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-div.sourceLine, a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource div.sourceLine, .numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource div.sourceLine::before, .numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em; }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; color: #aaaaaa;  padding-left: 4px; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; color: initial; }
-}
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.bn { color: #40a070; } /* BaseN */
-code span.fl { color: #40a070; } /* Float */
-code span.ch { color: #4070a0; } /* Char */
-code span.st { color: #4070a0; } /* String */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.ot { color: #007020; } /* Other */
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.fu { color: #06287e; } /* Function */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code span.cn { color: #880000; } /* Constant */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.im { } /* Import */
-code span.va { color: #19177c; } /* Variable */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.op { color: #666666; } /* Operator */
-code span.bu { } /* BuiltIn */
-code span.ex { } /* Extension */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.at { color: #7d9029; } /* Attribute */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -122,18 +69,17 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#git"><i class="fa fa-check"></i>為什麼我們需要Git</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#git"><i class="fa fa-check"></i>為什麼Git值得學</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#e7b7a8e5afabe696b9e5bc8fe8aaaae6988e"><i class="fa fa-check"></i>編寫方式說明</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#e59fbae69cace8a681e6b182"><i class="fa fa-check"></i>基本要求</a></li>
 </ul></li>
-<li class="part"><span><b>I Part I: CLI</b></span></li>
-<li class="chapter" data-level="2" data-path="commandlineinterface.html"><a href="commandlineinterface.html"><i class="fa fa-check"></i><b>2</b> CommandLineInterface</a></li>
-<li class="chapter" data-level="3" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>3</b> Github</a><ul>
-<li class="chapter" data-level="3.0.1" data-path="github.html"><a href="github.html#githubgit"><i class="fa fa-check"></i><b>3.0.1</b> Github與Git之間的關係</a></li>
+<li class="chapter" data-level="2" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>2</b> GitHub</a><ul>
+<li class="chapter" data-level="" data-path="github.html"><a href="github.html#githubgit"><i class="fa fa-check"></i>GitHub與Git之間的關係</a></li>
+<li class="chapter" data-level="" data-path="github.html"><a href="github.html#github"><i class="fa fa-check"></i>GitHub環境介紹</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="github-desktop.html"><a href="github-desktop.html"><i class="fa fa-check"></i><b>4</b> Github Desktop</a></li>
-<li class="chapter" data-level="5" data-path="git-1.html"><a href="git-1.html"><i class="fa fa-check"></i><b>5</b> Git</a><ul>
-<li class="chapter" data-level="5.1" data-path="git-1.html"><a href="git-1.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="git-1.html"><a href="git-1.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="3" data-path="github-desktop.html"><a href="github-desktop.html"><i class="fa fa-check"></i><b>3</b> Github Desktop</a></li>
+<li class="chapter" data-level="4" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>4</b> References</a><ul>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html#e69c89e8b6a3e79a84e69687e7aba0"><i class="fa fa-check"></i>有趣的文章</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.facebook.com/Emajortaiwanforu/" target="blank">E.MajorTaiwan</a></li>
@@ -147,7 +93,7 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Minimal Git demo</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Minimal-Git-demo</a>
           </h1>
         </div>
 
@@ -177,17 +123,17 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 }
 </style>
 <div id="header">
-<h1 class="title">Minimal Git demo</h1>
+<h1 class="title">Minimal-Git-demo</h1>
 <p class="author"><em>PoMingChen</em></p>
-<p class="date"><em>2019-02-23</em></p>
+<p class="date"><em>2019-02-24</em></p>
 </div>
 <div id="section-1" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> 前言</h1>
 <div id="git" class="section level3 unnumbered">
-<h3>為什麼我們需要Git</h3>
+<h3>為什麼Git值得學</h3>
 <p>小瑜是一位社會人文科學相關主修的學生，學習上常常會需要寫報告，動則數千字到上萬字，以下是他管理檔案的方式，他承認有時候快被自己氣死…..你是不是有時也這樣XD</p>
 <p>後來，因緣際會地留意到git這個東西，一套能夠讓開發者得以進行版本控制的程式。</p>
-<p>往後小瑜是事半功倍從此樂逍遙，檔案內容追蹤管理都方便許多，看完這本電子書後你也可以！當然80%的時候啦XD，畢竟這本書著重理解觀念，不觸及進階功能與指令，原則上能應付80%的情境所需＝）</p>
+<p>往後小瑜是事半功倍從此樂逍遙，檔案內容追蹤管理都方便許多，看完這本電子書後你也可以！當然80%的時候啦XD，這本書著重理解觀念，不觸及進階功能與指令，原則上能應付80%的情境所需＝）</p>
 <div class="alert white">
 <p>cheatsheet截圖對照<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a></p>
 </div>
@@ -202,20 +148,23 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 <h3>編寫方式說明</h3>
 <p>與其他教材稍有不同的是，這本書規劃先從輕鬆的Github平台環境介紹開始，版本控制的學習則用圖形化介面（GUI）的Github Desktop的操作來建立觀念，
 也藉此暫緩一下要直接面對黑壓壓終端機敲打指令的壓迫感…..</p>
-<p>進入到後半段才正式要認識如何用指令(Command Line)來與電腦溝通，同時瞧瞧Git指令的結果與Github Desktop點來點去的結果有沒有一樣？</p>
+<p>若能透過Github Desktop來理解Git運作的原理，未來若是進到Command Line Interface(CLI)的Git指令也能夠快速上手。</p>
 <p>預計分為幾個部分：</p>
 <ol style="list-style-type: decimal">
-<li>什麼是Github?</li>
-<li>什麼是Github Desktop?</li>
-<li>CommandLineInterface(CLI)</li>
-<li>Git指令與Github Desktop的對應比較。</li>
+<li>Github環境介紹</li>
+<li>Github Desktop介紹與版本控制操作</li>
+</ol>
+</div>
+<div id="e59fbae69cace8a681e6b182" class="section level3 unnumbered">
+<h3>基本要求</h3>
+<ol style="list-style-type: decimal">
+<li>開設並登入Github帳戶</li>
+<li>下載<a href="https://desktop.github.com">Github Desktop</a></li>
+<li>下載<a href="https://atom.io">Atom</a></li>
 </ol>
 
 </div>
 </div>
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -289,7 +238,7 @@ if (document.selection) {
         </div>
       </div>
 
-<a href="commandlineinterface.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="github.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -303,13 +252,13 @@ if (document.selection) {
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": false,
+"github": true,
+"facebook": true,
 "twitter": true,
-"google": false,
-"linkedin": false,
+"google": true,
+"linkedin": true,
 "weibo": false,
-"instapaper": false,
+"instapaper": true,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -326,10 +275,14 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["Minimal Git demo.pdf", "Minimal Git demo.epub"],
+"download": ["Minimal-Git-demo.pdf", "Minimal-Git-demo.epub"],
 "toc": {
-"collapse": "none"
+"collapse": "subsection"
 },
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
 "theme": "united"
 });
 });

@@ -7,16 +7,25 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
-      collapse: none
+      collapse: subsection
       before: |
         <li><a href="./">Minimal Git demo</a></li>
       after: |
         <li><a href="https://www.facebook.com/Emajortaiwanforu/" target="blank">E.MajorTaiwan</a></li>
-    download: [pdf, epub]
+    toolbar:
+      position: fixed #讓使用者瀏覽時，上面的工具欄保持不變（另一個是static，往下滑會消失掉，除非回去）
+    search: yes #讓使用者可以搜尋側邊目錄欄
+    download: ["pdf", "epub"]
 #    edit: https://github.com/yihui/bookdown-chinese/edit/master/%s
     sharing:
-      github: no
-      facebook: no
+      github: yes
+      facebook: yes
+      twitter: yes
+      google: yes
+      linkedin: yes
+      weibo: no
+      instapaper: yes
     theme: united
+    
 bookdown::epub_book:
-  stylesheet: css/style.css
+  stylesheet: ./style.css
