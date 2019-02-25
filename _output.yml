@@ -5,6 +5,7 @@ bookdown::gitbook:
                   "Before_body/style.html"]
     after_body: ["After_body/bootstrap-after-body.html"]
   css: style.css
+  toolbar: yes
   config:
     toc:
       collapse: subsection
@@ -20,12 +21,15 @@ bookdown::gitbook:
     sharing:
       github: yes
       facebook: yes
-      twitter: yes
-      google: yes
-      linkedin: yes
+      twitter: no
+      google: no
+      linkedin: no
       weibo: no
-      instapaper: yes
+      instapaper: no
     theme: united
+    
+bookdown::pdf_book:
+  latex_engine: "xelatex"
     
 bookdown::epub_book:
   stylesheet: ./style.css
