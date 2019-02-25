@@ -2,6 +2,8 @@
 
 # Github Desktop-Individual
 
+> 固定寫作模式，情境、截圖、graphiz、文字說明
+
 ## 基本名詞介紹{-}
 
 - Untracked：指尚未加入版本控制的檔案或資料夾
@@ -108,6 +110,26 @@ digraph git_add {
 
 > 小瑜在`Demo.txt`內新增了一些內容，差不多寫好一個段落了...
 
+<div class="alert white">
+截圖<a data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
+</div>
+
+```{r, eval=TRUE, echo=FALSE}
+library(htmltools)
+HTML('
+<div class="collapse" id="collapseExample10">
+<h3>檔案新增內容</h3>
+<img src="./img/commit1.png" style="width:70%">
+<h3>Github Desktop偵測到檔案變化</h3>
+<img src="./img/commit2.png" style="width:70%">
+</div>
+     ')
+```
+
+```{r}
+#graphiz on commit
+```
+
 - 新增檔案後，每當撰寫文字（或程式開發）到一個段落時候，就需要進行`commit`。每一次`commit`，git都會計算一個專屬的、絕對不重複的版本號。有點類似郵戳認證的感覺。
 
 - 切勿每天工作做完才`commit`，建議是完成一個小部分（也許畫完一個圖、修正完一個bug、建立好一個模型、寫好一個新的軟體功能）就`commit`一次。極端一點，可以每半小時到一小時`commit`一次。
@@ -115,6 +137,25 @@ digraph git_add {
 ### git push{-}
 
 > 同時小瑜為了建立良好的習慣，每一次commit都會同步到GitHub
+
+<div class="alert white">
+截圖<a data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
+</div>
+
+```{r, eval=TRUE, echo=FALSE}
+library(htmltools)
+HTML('
+<div class="collapse" id="collapseExample11">
+<h3>第一次推上雲端是publish</h3>
+<img src="./img/push1.png" style="width:70%">
+<h3>簡單設定好雲端的repo名稱（建議兩端相同）</h3>
+<img src="./img/push2.png" style="width:70%">
+<h3>往後同步都叫做fetch</h3>
+<img src="./img/push3.png" style="width:70%">
+</div>
+     ')
+```
+
 
 - 完成`commit`後，代表一個新進度已經完成囉！接下來可以同步到GitHub給其他團隊成員（其他開源社群使用者）參考，或進一步使用。消極一點，至少幫自己做個雲端備份。
 
