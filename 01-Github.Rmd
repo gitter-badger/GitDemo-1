@@ -2,7 +2,7 @@
 
 # GitHub
 
-### GitHub與Git之間的關係{-}
+## GitHub與Git之間的關係{-}
 
 > 如果你有在用Git，你不一定會用到GitHub；但若你有用GitHub，你一定有在用Git
 
@@ -20,11 +20,11 @@
 
 3. Git世界裡面的資料夾叫做repository(repo)，可以理解為儲存庫。只要有賦予其版本控制的資料夾都是一個repo。
 
-### GitHub環境介紹{-}
+## GitHub環境介紹{-}
 
 > 以下內容示範截圖皆以[R for Data Science](https://GitHub.com/hadley/r4ds)以及[PoMingChen/GitDemo](https://GitHub.com/PoMingChen/GitDemo)這兩個repo作為說明
 
-#### Fork{-}
+### Fork{-}
 
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
@@ -45,7 +45,7 @@ HTML('
 - **作用**：把別人整個repo複製到我的GitHub帳戶底下，我因此有了完整的屬於我的另外一份。
 - **使用時機**：**目的在參與**。當看到自己有興趣的專案，想要進一步玩玩或者做出貢獻，為了避免損及（更動）到原本作者的東西，就需要Fork自己的一份回來，改好之後就可以再送pull request（section ? ）給原作者。
 
-#### Watch & Star{-}
+### Watch & Star{-}
 
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
@@ -64,7 +64,7 @@ HTML('
 - **作用**：關注你感興趣的repo，方便往後查找
 - **使用時機**：Watch會動態通知該repo的更新給你，Star則不會。
 
-#### README{-}
+### README{-}
 
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
@@ -83,7 +83,7 @@ HTML('
 - **作用**：瞭解一下原開發者希望你如何使用這個repo
 - **使用時機**：進到任何一個新接觸的repo，有點類似使用說明書。
 
-#### Code{-}
+### Code{-}
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
 </div>
@@ -101,7 +101,7 @@ HTML('
 - **作用**：陳列這個repo有哪些檔案。
 - **使用時機**：若你需要瀏覽或下載單一個檔案的時候
 
-#### Issue{-}
+### Issue{-}
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
 </div>
@@ -119,7 +119,7 @@ HTML('
 - **作用**：紀錄開發者想要討論的議題
 - **使用時機**：團隊開發時藉此紀錄哪些bug還沒有修，或者（若是在別人的repo）藉此向對方反應使用上遇到的問題或者可能的建議。
 
-#### Pull Request{-}
+### Pull Request{-}
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
 </div>
@@ -138,7 +138,7 @@ HTML('
 - **使用時機**：團隊開發時當我寫好一個新的功能（或修改好bug）時候要送出給團隊使用；或者發現某個功能別人已經寫好了，想要奠基在他的程式碼做開發，就需要先把他納進來。
 - 詳見後面章節（?_給超連結）
 
-#### Project{-}
+### Project{-}
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
 </div>
@@ -156,7 +156,7 @@ HTML('
 - **作用**：視覺化目前團隊開發的各式進度，像是修bug，寫新功能，與其他部門配合的狀況。
 - **使用時機**：當發現issue不足以管理整個發展的時候，可以考慮使用。
 
-#### Wiki{-}
+### Wiki{-}
 <div class="alert white">
 截圖<a data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-image"></i></a>
 </div>
