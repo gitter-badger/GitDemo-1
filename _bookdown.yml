@@ -1,5 +1,5 @@
 book_filename: "Minimal-Git-demo"
 delete_merged_file: true
 language:
-  ui:
+  ui: #used to specify some terms in the user interface
     chapter_name: "Chapter "
